@@ -1,0 +1,17 @@
+type Block @entity {
+  id: Bytes!
+  eip1559: Boolean!
+  number: BigInt!
+  timestamp: BigInt!
+  size: BigInt
+  gasUsed: BigInt!
+  gasLimit: BigInt!
+  baseFeePerGas: BigInt
+  baseFeePerGasExpected: BigInt
+  ecoMaxPriorityFeePerGasRecommended: BigInt
+  standardMaxPriorityFeePerGasRecommended: BigInt
+  fastMaxPriorityFeePerGasRecommended: BigInt
+  ecoMaxFeePerGasRecommended: BigInt
+  standardMaxFeePerGasRecommended: BigInt
+  fastMaxFeePerGasRecommended: BigInt
+}
